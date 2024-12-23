@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import VerticalPills from './components/verticalpills'
+import TestimonialSlider from './components/testimonial'
+import HeroSection from './components/herosectionfoot'
+import Footer from './components/footer'
+import Hero from './components/hero'
+import Header from './components/header'
+import EcommerceSection from './components/ecommercesection'
+import ProductSection from './components/productsection'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Header/>
+    <Hero/>
+    <EcommerceSection/>
+    <ProductSection/>
+    <VerticalPills/>
+    <TestimonialSlider/>
+    <HeroSection/>
+    <Footer/>
+    </>
+  )
 }
 
-export default App;
+export default App
